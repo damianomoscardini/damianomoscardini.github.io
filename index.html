@@ -152,18 +152,42 @@
             border-bottom: 1px solid var(--accent-color);
         }
 
-        header .links a {
-            color: var(--text-primary);
-            text-decoration: none;
-            margin-right: 20px;
-            font-weight: 600;
-            border-bottom: 1px solid var(--border-color);
-            transition: color 0.2s, border-bottom 0.2s;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 48px;
+            max-width: 480px;
+            margin: 0 auto;
         }
-        
-        header .links a:hover {
+
+        .contact-item {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px 8px;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .contact-item:hover {
+            background-color: var(--tag-bg);
+        }
+
+        .contact-label {
+            display: block;
+            font-weight: 700;
             color: var(--accent-color);
-            border-bottom: 1px solid var(--accent-color);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .contact-value {
+            display: block;
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
 
         ul.conference-list {
@@ -207,11 +231,23 @@
             Passionate about experimental physics, optics, and quantum technologies. 
             I design and build experimental setups combining theoretical knowledge, 3D printing, and programming.
         </p>
-        <div class="links" style="margin-top: 30px;">
-            <a href="https://github.com/damianomoscardini" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/damianomoscardini" target="_blank">LinkedIn</a>
-            <a href="mailto:ciao@damianomoscardini.page">Email</a>
-            <a href="cv/curriculum.pdf" target="_blank">Download CV</a>
+        <div class="contact-grid" style="margin-top: 30px;">
+            <a href="cv/curriculum.pdf" target="_blank" class="contact-item">
+                <span class="contact-label">CV</span>
+                <span class="contact-value">cv/curriculum.pdf</span>
+            </a>
+            <a href="mailto:ciao@damianomoscardini.page" class="contact-item">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">ciao@damianomoscardini.page</span>
+            </a>
+            <a href="https://github.com/damianomoscardini" target="_blank" class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">https://github.com/damianomoscardini</span>
+            </a>
+            <a href="https://linkedin.com/in/damianomoscardini" target="_blank" class="contact-item">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">https://linkedin.com/in/damianomoscardini</span>
+            </a>
         </div>
     </header>
 
@@ -310,7 +346,7 @@
                 <li>
                     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
                         <strong style="font-size: 1.1rem;">IEEE QCE26</strong>
-                        <span style="color: var(--accent-color); font-weight: 600;">Toronto, September 2026 (Upcoming)</span>
+                        <span style="color: var(--accent-color); font-weight: 600;">Toronto, 2026</span>
                     </div>
                     <div style="color: var(--text-secondary);">International Conference on Quantum Computing & Engineering | Selected as Student Volunteer</div>
                 </li>
