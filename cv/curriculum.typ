@@ -5,14 +5,15 @@
 #set par(leading: 0.55em, justify: true)
 #set list(indent: 0.5em, spacing: 0.8em)
 
-#let accent = rgb("0f5132")
+#let link-color = rgb("0563C1")
 
+#let styled-link(target, body) = link(target)[#underline[#text(fill: link-color)[#body]]]
 
 // --- FUNZIONI DI LAYOUT ---
 
 #let contact(label, value, target) = [
-  #text(weight: "bold", size: 9.5pt, fill: accent)[#label] #linebreak()
-  #link(target)[#text(size: 9.5pt)[#value]]
+  #text(weight: "bold", size: 9.5pt)[#label] #linebreak()
+  #text(size: 9.5pt)[#styled-link(target, value)]
 ]
 
 #let section(title) = [
@@ -34,7 +35,7 @@
     #text(size: 12pt)[#subtitle]
     #if url != none [
       #v(0.2em)
-      #link(url)[#text(size: 10pt, fill: accent)[→ #url]]
+      #text(size: 10pt)[→ #styled-link(url, url)]
     ]
     #v(0.7em)
   ]
