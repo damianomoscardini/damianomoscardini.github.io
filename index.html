@@ -222,6 +222,24 @@
             font-weight: 700;
         }
 
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 480px) {
+            .entry-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .entry-header .entry-date {
+                margin-top: 2px;
+            }
+        }
+
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -268,21 +286,21 @@
         <section id="education">
             <div class="section-title">Education</div>
             <div class="project-card" style="border-left: 4px solid var(--text-secondary);">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                <div class="entry-header">
                     <h3 class="project-title" style="font-size: 1.2rem; margin-bottom: 5px;">M.Sc. Physics</h3>
-                    <span style="color: var(--accent-color); font-weight: 600;">2025 &ndash; 2028 (Expected)</span>
+                    <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">2025 &ndash; 2028 (Expected)</span>
                 </div>
                 <div style="color: var(--text-secondary); font-weight: 600; margin-bottom: 20px;">University of Pisa</div>
 
-                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                <div class="entry-header">
                     <h3 class="project-title" style="font-size: 1.2rem; margin-bottom: 5px;">B.Sc. Physics</h3>
-                    <span style="color: var(--accent-color); font-weight: 600;">2021 &ndash; 2025</span>
+                    <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">2021 &ndash; 2025</span>
                 </div>
                 <div style="color: var(--text-secondary); font-weight: 600; margin-bottom: 20px;">University of Pisa &bull; Grade: 102/110</div>
 
-                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                <div class="entry-header">
                     <h3 class="project-title" style="font-size: 1.2rem; margin-bottom: 5px;">High School Diploma</h3>
-                    <span style="color: var(--accent-color); font-weight: 600;">2015 &ndash; 2020</span>
+                    <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">2015 &ndash; 2020</span>
                 </div>
                 <div style="color: var(--text-secondary); font-weight: 600;">Liceo Scientifico Antonio Vallisneri, Lucca &bull; Grade: 100/100</div>
             </div>
@@ -356,30 +374,30 @@
             <div class="section-title">Conferences</div>
             <ul class="conference-list">
                 <li>
-                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                    <div class="entry-header">
                         <strong style="font-size: 1.1rem;">IEEE QCE26</strong>
-                        <span style="color: var(--accent-color); font-weight: 600;">Toronto, 2026</span>
+                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Toronto, 2026</span>
                     </div>
                     <div style="color: var(--text-secondary);">International Conference on Quantum Computing & Engineering | Selected as Student Volunteer</div>
                 </li>
                 <li>
-                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                    <div class="entry-header">
                         <strong style="font-size: 1.1rem;">CISF26</strong>
-                        <span style="color: var(--accent-color); font-weight: 600;">Rome, 2026</span>
+                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Rome, 2026</span>
                     </div>
                     <div style="color: var(--text-secondary);">Italian Conference of Physics Students | Attendee and Oral Presenter</div>
                 </li>
                 <li>
-                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                    <div class="entry-header">
                         <strong style="font-size: 1.1rem;">SIPE25</strong>
-                        <span style="color: var(--accent-color); font-weight: 600;">Bari, 2025</span>
+                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Bari, 2025</span>
                     </div>
                     <div style="color: var(--text-secondary);">Spanish Italian Physics Exchange | Attendee and Oral Presenter</div>
                 </li>
                 <li>
-                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                    <div class="entry-header">
                         <strong style="font-size: 1.1rem;">LoT25</strong>
-                        <span style="color: var(--accent-color); font-weight: 600;">Pisa and Florence, 2025</span>
+                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Pisa and Florence, 2025</span>
                     </div>
                     <div style="color: var(--text-secondary);">Lights of Tuscany | Attendee and Poster Presenter</div>
                 </li>
