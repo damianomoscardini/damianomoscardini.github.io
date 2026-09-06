@@ -98,9 +98,11 @@
             color: inherit;
         }
 
-        a.project-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        @media (hover: hover) {
+            a.project-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            }
         }
 
         /* Stile Immagini Progetto */
@@ -165,8 +167,10 @@
             transition: border-bottom 0.2s;
         }
 
-        a.project-card:hover .card-link-text {
-            border-bottom: 1px solid var(--accent-color);
+        @media (hover: hover) {
+            a.project-card:hover .card-link-text {
+                border-bottom: 1px solid var(--accent-color);
+            }
         }
 
         .contact-grid {
@@ -190,10 +194,12 @@
             transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
         }
 
-        .contact-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-            border-color: var(--accent-color);
+        @media (hover: hover) {
+            .contact-item:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+                border-color: var(--accent-color);
+            }
         }
 
         .contact-icon {
@@ -274,7 +280,7 @@
 <body>
 
     <header>
-        <img src="img/profile.png" alt="Damiano Moscardini" class="profile-img">
+        <img src="img/profile.jpg" alt="Damiano Moscardini" class="profile-img">
         <h1>Damiano <span>Moscardini</span></h1>
         <div class="subtitle">
             Physics Student | Quantum Computing & Technologies | Experimentalist
