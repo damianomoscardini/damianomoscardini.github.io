@@ -114,7 +114,7 @@
   #grid(
     columns: (150pt, 1fr), 
     gutter: 12pt,
-    text(weight: "bold")[Programming & Software:], [Python (intermediate; scientific libraries, PennyLane) • MatLab (intermediate) • LabVIEW (basic) • LaTeX (basic) • AutoCAD (advanced)],
+    text(weight: "bold")[Programming & Software:], [Python (intermediate; Scientific Libraries, PennyLane, PyVisa) • MatLab (intermediate) • LabVIEW (basic) • LaTeX (basic) • Typst (basic) • AutoCAD (advanced)],
     text(weight: "bold")[Hardware & Tools:], [3D printing (advanced) • Arduino (basic) • Raspberry Pi (intermediate)],
     text(weight: "bold")[Languages:], [Italian (native) • English (C1 - First Certificate)]
   )

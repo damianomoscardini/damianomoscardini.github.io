@@ -127,6 +127,23 @@
             margin-bottom: 15px;
         }
 
+        .skill-group {
+            margin-bottom: 24px;
+        }
+
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-category {
+            font-weight: 700;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
         .tag {
             background-color: var(--tag-bg);
             color: var(--accent-color);
@@ -229,6 +246,11 @@
             flex-wrap: wrap;
         }
 
+        .entry-date {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
         @media (max-width: 480px) {
             .entry-header {
                 flex-direction: column;
@@ -288,19 +310,19 @@
             <div class="project-card" style="border-left: 4px solid var(--text-secondary);">
                 <div class="entry-header">
                     <h3 class="project-title" style="font-size: 1.2rem; margin-bottom: 5px;">M.Sc. Physics</h3>
-                    <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">2025 &ndash; 2028 (Expected)</span>
+                    <span class="entry-date">2025 &ndash; 2028 (Expected)</span>
                 </div>
                 <div style="color: var(--text-secondary); font-weight: 600; margin-bottom: 20px;">University of Pisa</div>
 
                 <div class="entry-header">
                     <h3 class="project-title" style="font-size: 1.2rem; margin-bottom: 5px;">B.Sc. Physics</h3>
-                    <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">2021 &ndash; 2025</span>
+                    <span class="entry-date">2021 &ndash; 2025</span>
                 </div>
                 <div style="color: var(--text-secondary); font-weight: 600; margin-bottom: 20px;">University of Pisa &bull; Grade: 102/110</div>
 
                 <div class="entry-header">
                     <h3 class="project-title" style="font-size: 1.2rem; margin-bottom: 5px;">High School Diploma</h3>
-                    <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">2015 &ndash; 2020</span>
+                    <span class="entry-date">2015 &ndash; 2020</span>
                 </div>
                 <div style="color: var(--text-secondary); font-weight: 600;">Liceo Scientifico Antonio Vallisneri, Lucca &bull; Grade: 100/100</div>
             </div>
@@ -311,7 +333,10 @@
 
             <a href="https://github.com/damianomoscardini/qsvm-encoding-benchmark" target="_blank" class="project-card">
                 <img src="img/qsvm.png" alt="Quantum SVM Feature Map" class="project-img" style="--img-ratio: 2688 / 1152;">
-                <div class="project-title">QSVM Encoding Benchmark</div>
+                <div class="entry-header">
+                    <div class="project-title">QSVM Encoding Benchmark</div>
+                    <span class="entry-date">2026</span>
+                </div>
                 <div class="tags">
                     <span class="tag">Quantum Machine Learning</span>
                     <span class="tag">Python</span>
@@ -327,7 +352,10 @@
 
             <a href="https://github.com/damianomoscardini/3d-printed-mzi" class="project-card">
                 <img src="img/mzi.svg" alt="Sinusoidal interference fringes" class="project-img" style="--img-ratio: 648.21 / 393.16;">
-                <div class="project-title">3D-Printed Mach-Zehnder Interferometer</div>
+                <div class="entry-header">
+                    <div class="project-title">3D-Printed Mach-Zehnder Interferometer</div>
+                    <span class="entry-date">2026</span>
+                </div>
                 <div class="tags">
                     <span class="tag">Experimental Optics</span>
                     <span class="tag">3D Printing</span>
@@ -342,7 +370,10 @@
 
                         <a href="thesis.html" class="project-card">
                 <img src="img/diffraction.png" alt="Single-Photon Diffraction Pattern" class="project-img" style="--img-ratio: 3226 / 702;">
-                <div class="project-title">3D-Printed Single-Photon Diffraction</div>
+                <div class="entry-header">
+                    <div class="project-title">3D-Printed Single-Photon Diffraction</div>
+                    <span class="entry-date">2025</span>
+                </div>
                 <div class="tags">
                     <span class="tag">3D Printing</span>
                     <span class="tag">Quantum Optics</span>
@@ -359,14 +390,30 @@
 
         <section id="skills">
             <div class="section-title">Skills</div>
-            <div>
-                <span class="tag">Python (PennyLane)</span>
-                <span class="tag">3D Printing (FDM)</span>
-                <span class="tag">AutoCAD</span>
-                <span class="tag">MatLab</span>
-                <span class="tag">LabVIEW</span>
-                <span class="tag">Raspberry Pi</span>
-                <span class="tag">Arduino</span>
+            <div class="skill-group">
+                <div class="skill-category">Programming & Software</div>
+                <div>
+                    <span class="tag">Python (Scientific Libraries, PennyLane, PyVisa)</span>
+                    <span class="tag">MatLab</span>
+                    <span class="tag">LabVIEW</span>
+                    <span class="tag">LaTeX</span>
+                    <span class="tag">AutoCAD</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-category">Hardware & Tools</div>
+                <div>
+                    <span class="tag">3D Printing (FDM)</span>
+                    <span class="tag">Arduino</span>
+                    <span class="tag">Raspberry Pi</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-category">Languages</div>
+                <div>
+                    <span class="tag">Italian</span>
+                    <span class="tag">English</span>
+                </div>
             </div>
         </section>
 
@@ -376,28 +423,28 @@
                 <li>
                     <div class="entry-header">
                         <strong style="font-size: 1.1rem;">IEEE QCE26</strong>
-                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Toronto, 2026</span>
+                        <span class="entry-date">Toronto, 2026</span>
                     </div>
                     <div style="color: var(--text-secondary);">International Conference on Quantum Computing & Engineering | Selected as Student Volunteer</div>
                 </li>
                 <li>
                     <div class="entry-header">
                         <strong style="font-size: 1.1rem;">CISF26</strong>
-                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Rome, 2026</span>
+                        <span class="entry-date">Rome, 2026</span>
                     </div>
                     <div style="color: var(--text-secondary);">Italian Conference of Physics Students | Attendee and Oral Presenter</div>
                 </li>
                 <li>
                     <div class="entry-header">
                         <strong style="font-size: 1.1rem;">SIPE25</strong>
-                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Bari, 2025</span>
+                        <span class="entry-date">Bari, 2025</span>
                     </div>
                     <div style="color: var(--text-secondary);">Spanish Italian Physics Exchange | Attendee and Oral Presenter</div>
                 </li>
                 <li>
                     <div class="entry-header">
                         <strong style="font-size: 1.1rem;">LoT25</strong>
-                        <span class="entry-date" style="color: var(--accent-color); font-weight: 600;">Pisa and Florence, 2025</span>
+                        <span class="entry-date">Pisa and Florence, 2025</span>
                     </div>
                     <div style="color: var(--text-secondary);">Lights of Tuscany | Attendee and Poster Presenter</div>
                 </li>
