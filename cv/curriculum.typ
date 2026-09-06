@@ -130,8 +130,8 @@
   "2020 - Present"
 )
 
-// Academic Activities
-#section("Academic Activities")
+// Conferences
+#section("Conferences")
 
 #entry(
   "IEEE QCE26",
