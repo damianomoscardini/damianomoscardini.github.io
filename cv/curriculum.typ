@@ -102,7 +102,8 @@
 #entry(
   "3D-Printed Single-Photon Diffraction Experiment (B.Sc. thesis)", 
   "Design and construction of a low-cost, 3D-printed experimental setup to demonstrate diffraction in the single-photon regime using an attenuated laser.", 
-  "2025"
+  "2025",
+  url: "https://github.com/damianomoscardini/3d-printed-single-photon-diffraction"
 )
 
 #pagebreak(weak: true)
