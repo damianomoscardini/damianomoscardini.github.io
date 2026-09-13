@@ -141,7 +141,7 @@
 #entry(
   "IEEE QCE26",
   "International Conference on Quantum Computing & Engineering | Selected as Student Volunteer",
-  "Toronto, September 2026 (Upcoming)"
+  "Toronto, 2026"
 )
 
 #entry(
