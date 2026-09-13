@@ -45,6 +45,9 @@
 // --- CONTENUTO DEL CV ---
 
 // Header
+#place(top + right)[
+  #image("qrcode.svg", width: 1.8cm)
+]
 #align(center)[
   #text(size: 24pt, weight: "bold", tracking: 1pt)[Damiano Moscardini]
   #v(0.3em)
@@ -87,21 +90,21 @@
 
 #entry(
   "QSVM Encoding Benchmark",
-  "Evaluating the impact of different quantum data encodings on a Quantum Support Vector Machine. By exploiting the independence of the quantum kernel from the classical training, the project studies how different feature maps project data into distinct geometric spaces.",
+  "Comparative benchmark of 5 quantum encoding strategies against a classical RBF baseline, across 6 datasets with different geometries. Evaluates how well each encoding's kernel geometry matches the classification task, using dedicated metrics (Kernel-Target Alignment, Geometric Coefficient) alongside standard accuracy.",
   "2026",
   url: "https://github.com/damianomoscardini/qsvm-encoding-benchmark"
 )
 
 #entry(
   "3D-Printed Mach-Zehnder Interferometer",
-  "Design, construction and optical alignment of a desktop-sized, 3D-printed Mach-Zehnder interferometer to demonstrate wave interference.",
+  "Design, construction and optical alignment of a desktop-sized, 3D-printed Mach-Zehnder interferometer to demonstrate wave interference. Fringe intensity acquisition via OPT101 photodiodes and a Siglent SDS824XHD oscilloscope, with thermally induced phase shift via a Kapton heater.",
   "2026",
   url: "https://github.com/damianomoscardini/3d-printed-mzi"
 )
 
 #entry(
-  "3D-Printed Single-Photon Diffraction Experiment (B.Sc. thesis)", 
-  "Design and construction of a low-cost, 3D-printed experimental setup to demonstrate diffraction in the single-photon regime using an attenuated laser.", 
+  "3D-Printed \"Single-Photon\" Diffraction Experiment (B.Sc. thesis)",
+  "Design and construction of a low-cost, 3D-printed experimental setup to demonstrate diffraction in the \"single-photon\" regime using an attenuated laser, with the pattern recorded on photographic film as a low-cost \"single-photon\" detector.",
   "2025",
   url: "https://github.com/damianomoscardini/3d-printed-single-photon-diffraction"
 )
