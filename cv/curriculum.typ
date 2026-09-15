@@ -138,7 +138,7 @@
 
 #entry(
   "Mathematics and Physics Tutor", 
-  "Provide continuous academic support for high school and university students. Develop personalized teaching methodologies and preparation strategies for national exams and university-level courses. Collaborated with Centro Yep! (Lucca, 2020 - 2022) and continued with private tutoring.", 
+  "Provide continuous academic support for high school and university students. Develop personalized teaching methodologies and preparation strategies for national exams and university-level courses. Collaborated with Centro Yep! (Lucca, 2020 - 2023) and continued with private tutoring.", 
   "2020 - Present"
 )
 
