@@ -46,7 +46,14 @@
 
 // Header
 #place(top + right)[
-  #image("qrcode.svg", width: 1.8cm)
+  #block(width: 2.4cm)[
+    #align(center)[
+      #stack(dir: ttb, spacing: 3pt,
+        image("qrcode.svg", width: 1.8cm),
+        text(size: 6.5pt, fill: rgb("777777"))[Scan for portfolio]
+      )
+    ]
+  ]
 ]
 #align(center)[
   #text(size: 24pt, weight: "bold", tracking: 1pt)[Damiano Moscardini]
@@ -119,7 +126,7 @@
   #grid(
     columns: (150pt, 1fr), 
     gutter: 12pt,
-    text(weight: "bold")[Programming & Software:], [Python (PennyLane, PyVisa) • MatLab • LabVIEW • LaTeX • Typst • AutoCAD],
+    text(weight: "bold")[Programming & Software:], [Python (PennyLane, PyVisa) • MATLAB • LabVIEW • LaTeX • Typst • AutoCAD],
     text(weight: "bold")[Hardware & Tools:], [3D printing • Arduino • Raspberry Pi],
     text(weight: "bold")[Languages:], [Italian (native) • English (C1 - First Certificate)]
   )
