@@ -77,11 +77,11 @@
 
 #entry(
   "B.Sc. Physics", 
-  "University of Pisa | Grade: 102/110", "2021 - 2025")
+  "University of Pisa", "2021 - 2025")
 
 #entry(
   "High School Diploma (Scientific)", 
-  "Liceo Scientifico Antonio Vallisneri, Lucca | Grade: 100/100", "2015 - 2020")
+  "Liceo Scientifico Antonio Vallisneri, Lucca", "2015 - 2020")
 
 
 // Selected Projects
@@ -119,8 +119,8 @@
   #grid(
     columns: (150pt, 1fr), 
     gutter: 12pt,
-    text(weight: "bold")[Programming & Software:], [Python (intermediate; PennyLane, PyVisa) • MatLab (intermediate) • LabVIEW (basic) • LaTeX (basic) • Typst (basic) • AutoCAD (advanced)],
-    text(weight: "bold")[Hardware & Tools:], [3D printing (advanced) • Arduino (basic) • Raspberry Pi (intermediate)],
+    text(weight: "bold")[Programming & Software:], [Python (PennyLane, PyVisa) • MatLab • LabVIEW • LaTeX • Typst • AutoCAD],
+    text(weight: "bold")[Hardware & Tools:], [3D printing • Arduino • Raspberry Pi],
     text(weight: "bold")[Languages:], [Italian (native) • English (C1 - First Certificate)]
   )
 ]
