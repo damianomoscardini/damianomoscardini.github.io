@@ -6,6 +6,7 @@
 #set list(indent: 0.5em, spacing: 0.8em)
 
 #let link-color = rgb("0563C1")
+#let muted = rgb("555555")
 
 #let styled-link(target, body) = link(target)[#underline[#text(fill: link-color)[#body]]]
 
@@ -29,7 +30,7 @@
       columns: (1fr, auto),
       column-gutter: 1em,
       align(left)[#text(weight: "bold", size: 13pt)[#title]],
-      align(right)[#text(style: "italic", size: 12pt, fill: rgb("333333"))[#date]]
+      align(right)[#text(style: "italic", size: 12pt, fill: muted)[#date]]
     )
     #v(0.1em)
     #text(size: 12pt)[#subtitle]
@@ -50,15 +51,16 @@
     #align(center)[
       #stack(dir: ttb, spacing: 3pt,
         image("qrcode.svg", width: 1.8cm),
-        text(size: 6.5pt, fill: rgb("777777"))[Scan for portfolio]
+        text(size: 6.5pt, fill: muted)[Scan for portfolio]
       )
     ]
   ]
 ]
 #align(center)[
-  #text(size: 24pt, weight: "bold", tracking: 1pt)[Damiano Moscardini]
-  #v(0.3em)
-  #text(size: 10.5pt, fill: rgb("555555"))[Tuscany, Italy]
+  #stack(dir: ttb, spacing: 14pt,
+    text(size: 24pt, weight: "bold", tracking: 1pt)[Damiano Moscardini],
+    text(size: 13pt, weight: "medium", fill: muted)[MSc Physics Student at University of Pisa]
+  )
   #v(0.7em)
   #block(width: 90%)[
     #grid(
@@ -172,14 +174,14 @@
 
 // Interests
 #section("Interests")
-- 3D Printing: Custom DIY projects, prototyping, lab equipment design and everyday functional prints.
-- Piano: 11 years of practice.
+- *3D Printing:* Custom DIY projects, prototyping, lab equipment design and everyday functional prints.
+- *Piano:* 11 years of practice.
 #v(0.7em) 
 
 
 #v(2.5em)
 #align(right)[
-  #text(size: 10pt, style: "italic", fill: rgb("555555"))[
+  #text(size: 10pt, style: "italic", fill: muted)[
     Last updated: #datetime.today().display("[month repr:long] [day], [year]")
-  ] 
+  ]
 ]
