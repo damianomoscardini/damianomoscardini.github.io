@@ -98,7 +98,7 @@
 
 #entry(
   "3D-Printed Mach-Zehnder Interferometer",
-  "Design, construction and optical alignment of a desktop-sized, 3D-printed Mach-Zehnder interferometer to demonstrate wave interference. Fringe intensity acquisition via OPT101 photodiodes and a Siglent SDS824XHD oscilloscope, with thermally induced phase shift via a Kapton heater.",
+  "A desktop-sized, 3D-printed Mach-Zehnder interferometer demonstrating wave interference. Fringe intensity is acquired via OPT101 photodiodes and a Siglent SDS824XHD oscilloscope, with the phase shift induced thermally via a Kapton heater.",
   "2026",
   url: "https://github.com/damianomoscardini/3d-printed-mzi"
 )
@@ -112,7 +112,7 @@
 
 #entry(
   "3D-Printed \"Single-Photon\" Diffraction Experiment (B.Sc. thesis)",
-  "Design and construction of a low-cost, 3D-printed experimental setup to demonstrate diffraction in the \"single-photon\" regime using an attenuated laser, with the pattern recorded on photographic film as a low-cost \"single-photon\" detector.",
+  "A low-cost, 3D-printed experimental setup demonstrating diffraction in the \"single-photon\" regime, using an attenuated laser and photographic film as a low-cost \"single-photon\" detector to record the pattern.",
   "2025",
   url: "https://github.com/damianomoscardini/3d-printed-single-photon-diffraction"
 )
