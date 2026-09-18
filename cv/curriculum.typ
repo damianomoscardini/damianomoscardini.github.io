@@ -18,10 +18,10 @@
 ]
 
 #let section(title) = [
-  #v(1.2em) 
-  #text(weight: "bold", size: 14pt, tracking: 0.5pt)[#upper(title)] 
-  #line(length: 100%, stroke: 0.5pt + rgb("888888")) 
-  #v(0.3em) 
+  #v(1.2em)
+  #text(weight: "bold", size: 14pt, tracking: 0.5pt)[#upper(title)]
+  #line(length: 100%, stroke: 0.5pt + rgb("888888"))
+  #v(0.3em)
 ]
 
 #let entry(title, subtitle, date, url: none) = [
@@ -59,7 +59,7 @@
 #align(center)[
   #stack(dir: ttb, spacing: 14pt,
     text(size: 24pt, weight: "bold", tracking: 1pt)[Damiano Moscardini],
-    text(size: 13pt, weight: "medium", fill: muted)[MSc Physics Student at University of Pisa]
+    text(size: 13pt, weight: "medium", fill: muted)[M.Sc. Physics Student at University of Pisa]
   )
   #v(0.7em)
   #block(width: 90%)[
@@ -81,17 +81,16 @@
 #section("Education")
 
 #entry(
-  "M.Sc. Physics (Quantum Computing and Technologies)", 
+  "M.Sc. Physics (Quantum Computing and Technologies)",
   "University of Pisa", "2025 - 2028 (Expected)")
 
 #entry(
-  "B.Sc. Physics", 
+  "B.Sc. Physics",
   "University of Pisa", "2021 - 2025")
 
 #entry(
-  "High School Diploma (Scientific)", 
+  "High School Diploma (Scientific)",
   "Liceo Scientifico Antonio Vallisneri, Lucca", "2015 - 2020")
-
 
 // Selected Projects
 
@@ -126,10 +125,10 @@
 
 #block(width: 100%)[
   #grid(
-    columns: (150pt, 1fr), 
+    columns: (150pt, 1fr),
     gutter: 12pt,
     text(weight: "bold")[Programming & Software:], [Python (PennyLane, PyVisa) • MATLAB • LabVIEW • LaTeX • Typst • AutoCAD],
-    text(weight: "bold")[Hardware & Tools:], [3D printing • Arduino • Raspberry Pi],
+    text(weight: "bold")[Hardware & Tools:], [3D Printing • Arduino • Raspberry Pi],
     text(weight: "bold")[Languages:], [Italian (native) • English (C1 - First Certificate)]
   )
 ]
@@ -139,8 +138,8 @@
 #section("Experience")
 
 #entry(
-  "Mathematics and Physics Tutor", 
-  "Provide continuous academic support for high school and university students. Develop personalized teaching methodologies and preparation strategies for national exams and university-level courses. Collaborated with Centro Yep! (Lucca, 2020 - 2023) and continued with private tutoring.", 
+  "Mathematics and Physics Tutor",
+  "Provide continuous academic support for high school and university students. Develop personalized teaching methodologies and preparation strategies for national exams and university-level courses. Collaborated with Centro Yep! (Lucca, 2020 - 2023) and continued with private tutoring.",
   "2020 - Present"
 )
 
@@ -176,8 +175,7 @@
 #section("Interests")
 - *3D Printing:* Custom DIY projects, prototyping, lab equipment design and everyday functional prints.
 - *Piano:* 11 years of practice.
-#v(0.7em) 
-
+#v(0.7em)
 
 #v(2.5em)
 #align(right)[
