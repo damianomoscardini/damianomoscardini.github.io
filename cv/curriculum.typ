@@ -24,15 +24,19 @@
   #v(0.3em)
 ]
 
-#let entry(title, subtitle, date, url: none) = [
+#let entry(title, subtitle, date, url: none, tags: none) = [
   #block(width: 100%, breakable: false)[
     #grid(
       columns: (1fr, auto),
       column-gutter: 1em,
       align(left)[#text(weight: "bold", size: 13pt)[#title]],
-      align(right)[#text(style: "italic", size: 12pt, fill: muted)[#date]]
+      align(right)[#text(size: 12pt, fill: muted)[#date]]
     )
-    #v(0.1em)
+    #if tags != none [
+      #v(0.1em)
+      #text(size: 12pt, fill: muted)[#tags.join(" • ")]
+    ]
+    #v(0.15em)
     #text(size: 12pt)[#subtitle]
     #if url != none [
       #v(0.2em)
@@ -46,16 +50,6 @@
 // --- CONTENUTO DEL CV ---
 
 // Header
-#place(top + right)[
-  #block(width: 2.4cm)[
-    #align(center)[
-      #stack(dir: ttb, spacing: 3pt,
-        image("qrcode.svg", width: 1.8cm),
-        text(size: 6.5pt, fill: muted)[Scan for portfolio]
-      )
-    ]
-  ]
-]
 #align(center)[
   #stack(dir: ttb, spacing: 14pt,
     text(size: 24pt, weight: "bold", tracking: 1pt)[Damiano Moscardini],
@@ -64,11 +58,12 @@
   #v(0.7em)
   #block(width: 90%)[
     #grid(
-      columns: (1fr, 1fr),
-      column-gutter: 2.5em,
+      columns: (1fr, auto, 1fr),
+      column-gutter: 2em,
       row-gutter: 0.9em,
       align: center + horizon,
       contact("Website", "https://damianomoscardini.page", "https://damianomoscardini.page"),
+      grid.cell(rowspan: 2)[#image("qrcode.svg", width: 1.7cm)],
       contact("Email", "ciao@damianomoscardini.page", "mailto:ciao@damianomoscardini.page"),
       contact("GitHub", "https://github.com/damianomoscardini", "https://github.com/damianomoscardini"),
       contact("LinkedIn", "https://linkedin.com/in/damianomoscardini", "https://linkedin.com/in/damianomoscardini"),
@@ -100,24 +95,25 @@
   "3D-Printed Mach-Zehnder Interferometer",
   "A desktop-sized, 3D-printed Mach-Zehnder interferometer demonstrating wave interference. Fringe intensity is acquired via OPT101 photodiodes and a Siglent SDS824XHD oscilloscope, with the phase shift induced thermally via a Kapton heater.",
   "2026",
-  url: "https://github.com/damianomoscardini/3d-printed-mzi"
+  url: "https://github.com/damianomoscardini/3d-printed-mzi",
+  tags: ("Experimental Optics", "3D Printing", "Data Acquisition")
 )
 
 #entry(
   "QSVM Encoding Benchmark",
   "A benchmarking framework designed to compare quantum data-encoding strategies for QSVM kernels against a classical RBF-kernel SVM baseline, across datasets of varying geometry, using several dedicated metrics alongside standard accuracy.",
   "2026",
-  url: "https://github.com/damianomoscardini/qsvm-encoding-benchmark"
+  url: "https://github.com/damianomoscardini/qsvm-encoding-benchmark",
+  tags: ("Quantum Machine Learning", "Python", "Scikit-Learn", "PennyLane")
 )
 
 #entry(
-  "3D-Printed \"Single-Photon\" Diffraction Experiment (B.Sc. thesis)",
+  "3D-Printed \"Single-Photon\" Diffraction Experiment",
   "A low-cost, 3D-printed experimental setup demonstrating diffraction in the \"single-photon\" regime, using an attenuated laser and photographic film as a low-cost \"single-photon\" detector to record the pattern.",
   "2025",
-  url: "https://github.com/damianomoscardini/3d-printed-single-photon-diffraction"
+  url: "https://github.com/damianomoscardini/3d-printed-single-photon-diffraction",
+  tags: ("3D Printing", "Quantum Optics", "B.Sc. Thesis")
 )
-
-#pagebreak(weak: true)
 
 // Skills
 
@@ -174,7 +170,7 @@
 // Interests
 #section("Interests")
 - *3D Printing:* Custom DIY projects, prototyping, lab equipment design and everyday functional prints.
-- *Piano:* 11 years of practice.
+- *Piano:* Eleven years of practice.
 #v(0.7em)
 
 #v(2.5em)
