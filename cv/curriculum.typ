@@ -97,17 +97,17 @@
 #section("Selected Projects")
 
 #entry(
-  "QSVM Encoding Benchmark",
-  "A benchmarking framework designed to compare quantum data-encoding strategies for QSVM kernels against a classical RBF-kernel SVM baseline, across datasets of varying geometry, using several dedicated metrics alongside standard accuracy.",
-  "2026",
-  url: "https://github.com/damianomoscardini/qsvm-encoding-benchmark"
-)
-
-#entry(
   "3D-Printed Mach-Zehnder Interferometer",
   "Design, construction and optical alignment of a desktop-sized, 3D-printed Mach-Zehnder interferometer to demonstrate wave interference. Fringe intensity acquisition via OPT101 photodiodes and a Siglent SDS824XHD oscilloscope, with thermally induced phase shift via a Kapton heater.",
   "2026",
   url: "https://github.com/damianomoscardini/3d-printed-mzi"
+)
+
+#entry(
+  "QSVM Encoding Benchmark",
+  "A benchmarking framework designed to compare quantum data-encoding strategies for QSVM kernels against a classical RBF-kernel SVM baseline, across datasets of varying geometry, using several dedicated metrics alongside standard accuracy.",
+  "2026",
+  url: "https://github.com/damianomoscardini/qsvm-encoding-benchmark"
 )
 
 #entry(
