@@ -98,7 +98,7 @@
 
 #entry(
   "QSVM Encoding Benchmark",
-  "Comparative benchmark of 5 quantum encoding strategies against a classical RBF baseline, across 6 datasets with different geometries. Evaluates how well each encoding's kernel geometry matches the classification task, using dedicated metrics (Kernel-Target Alignment, Geometric Coefficient) alongside standard accuracy.",
+  "A benchmarking framework designed to compare quantum data-encoding strategies for QSVM kernels against a classical RBF-kernel SVM baseline, across datasets of varying geometry, using several dedicated metrics alongside standard accuracy.",
   "2026",
   url: "https://github.com/damianomoscardini/qsvm-encoding-benchmark"
 )
