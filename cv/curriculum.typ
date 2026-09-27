@@ -111,7 +111,7 @@
   "3D-Printed \"Single-Photon\" Diffraction Experiment",
   "A low-cost, 3D-printed experimental setup demonstrating diffraction in the \"single-photon\" regime, using an attenuated laser and photographic film as a low-cost \"single-photon\" detector to record the pattern.",
   "2025",
-  url: "https://github.com/damianomoscardini/3d-printed-single-photon-diffraction",
+  url: "https://github.com/damianomoscardini/3d-printed-single-photon-double-slit-diffraction",
   tags: ("Experimental Quantum Optics", "Photographic Detection", "B.Sc. Thesis")
 )
 
