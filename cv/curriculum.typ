@@ -96,7 +96,7 @@
   "A desktop-sized, 3D-printed Mach-Zehnder interferometer demonstrating wave interference. Fringe intensity is acquired via OPT101 photodiodes and a Siglent SDS824XHD oscilloscope, with the phase shift induced thermally via a Kapton heater.",
   "2026",
   url: "https://github.com/damianomoscardini/3d-printed-mzi",
-  tags: ("Optomechanical Design", "Experimental Optics", "PyVisa", "Arduino")
+  tags: ("Experimental Optics", "Optomechanical Design", "PyVisa", "Arduino")
 )
 
 #entry(
