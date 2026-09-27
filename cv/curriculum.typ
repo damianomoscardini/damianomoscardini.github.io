@@ -96,7 +96,7 @@
   "A desktop-sized, 3D-printed Mach-Zehnder interferometer demonstrating wave interference. Fringe intensity is acquired via OPT101 photodiodes and a Siglent SDS824XHD oscilloscope, with the phase shift induced thermally via a Kapton heater.",
   "2026",
   url: "https://github.com/damianomoscardini/3d-printed-mzi",
-  tags: ("Experimental Optics", "3D Printing", "Data Acquisition")
+  tags: ("Optomechanical Design", "Experimental Optics", "PyVisa", "Arduino")
 )
 
 #entry(
@@ -112,7 +112,7 @@
   "A low-cost, 3D-printed experimental setup demonstrating diffraction in the \"single-photon\" regime, using an attenuated laser and photographic film as a low-cost \"single-photon\" detector to record the pattern.",
   "2025",
   url: "https://github.com/damianomoscardini/3d-printed-single-photon-diffraction",
-  tags: ("3D Printing", "Quantum Optics", "B.Sc. Thesis")
+  tags: ("Experimental Quantum Optics", "Photographic Detection", "B.Sc. Thesis")
 )
 
 // Skills
@@ -123,7 +123,7 @@
   #grid(
     columns: (150pt, 1fr),
     gutter: 12pt,
-    text(weight: "bold")[Programming & Software:], [Python (PennyLane, PyVisa) • MATLAB • LabVIEW • LaTeX • Typst • AutoCAD],
+    text(weight: "bold")[Programming & Software:], [Python • MATLAB • LabVIEW • LaTeX • Typst • AutoCAD],
     text(weight: "bold")[Hardware & Tools:], [3D Printing • Arduino • Raspberry Pi],
     text(weight: "bold")[Languages:], [Italian (native) • English (C1 - First Certificate)]
   )
@@ -165,13 +165,6 @@
   "Lights of Tuscany | Attendee and Poster Presenter",
   "Pisa and Florence, 2025"
 )
-
-
-// Interests
-#section("Interests")
-- *3D Printing:* Custom DIY projects, prototyping, lab equipment design and everyday functional prints.
-- *Piano:* Eleven years of practice.
-#v(0.7em)
 
 #v(2.5em)
 #align(right)[
